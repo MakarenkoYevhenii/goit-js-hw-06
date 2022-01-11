@@ -1,9 +1,16 @@
-let counterValue ='0';
-const button = document.querySelector("button");
 
-const handleClick = () => {
-  console.log("Button was clicked");
+let counterValue =0;
+const buttonNegativeEl = document.querySelector("[data-action=decrement]");
+const buttonPositiveEl = document.querySelector("[data-action=increment]");
+
+const posetiv = () => {
+    counterValue=counterValue+1
+    document.querySelector("#value").textContent=counterValue
 };
 
-button.addEventListener("click", handleClick);
-// console.log(minus);
+const negativ = () => {
+    counterValue=counterValue-1
+    document.querySelector("#value").textContent=counterValue
+};
+buttonPositive.addEventListener("click", posetiv);
+buttonNegative.addEventListener("click", negativ);

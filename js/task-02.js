@@ -15,4 +15,4 @@ const itemsOfIngredients=ingredients.map((item)=> {
 })
 
 console.log(...itemsOfIngredients);
-document.querySelector("#ingredients").append(...itemsOfIngredients)
+const makeNewList=document.querySelector("#ingredients").append(...itemsOfIngredients)

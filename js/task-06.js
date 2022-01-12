@@ -6,8 +6,10 @@ textHolder.addEventListener("blur",() =>
     {
         textHolder.classList.remove("invalid")
         textHolder.classList.add("valid")
+        return  
     }
+    
     textHolder.classList.add("invalid")
     textHolder.classList.remove("valid")
-
+    
 })

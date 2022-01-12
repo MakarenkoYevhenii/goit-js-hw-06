@@ -1,7 +1,7 @@
 const formEl = document.querySelector('.login-form');
 const formEmailEl = document.querySelector('input[name="email"]');
 const formPasswordEl = document.querySelector('input[name="password"]');
-formEl.addEventListener('submit', event => {
+const chekFuction=function name(event) {
     event.preventDefault();
     if( formEmailEl.value === '' || formPasswordEl.value === ''){
         return alert('Все поля должны быть заполнены!');
@@ -14,4 +14,5 @@ formEl.addEventListener('submit', event => {
     };
     console.log(formInfo);
     event.currentTarget.reset();
-});
+}
+formEl.addEventListener('submit',chekFuction );

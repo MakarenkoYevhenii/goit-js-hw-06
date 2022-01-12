@@ -11,8 +11,10 @@ const itemsOfIngredients=ingredients.map((item) => {
   const items = document.createElement("li")
   items.textContent = `${item}`
   items.classList.add("item")
+  
   return items
 })
 
 console.log(...itemsOfIngredients);
-const makeNewList = document.querySelector("#ingredients").append(...itemsOfIngredients)
+const makeNewList = document.querySelector("#ingredients")
+const addNewItems = makeNewList.append(...itemsOfIngredients)

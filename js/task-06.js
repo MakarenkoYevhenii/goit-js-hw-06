@@ -7,17 +7,11 @@ textHolder.addEventListener("blur",() =>
         textHolder.classList.add("valid")
     }
     else if(textHolder.value.length === Number(textHolder.dataset.length)){   
-        textHolder.classList.add("valid")
         textHolder.classList.remove("invalid")
+        textHolder.classList.add("valid")
     }
    
     else{textHolder.classList.add("invalid")
+    textHolder.classList.remove("valid")
 }
-})
-textHolder.addEventListener("input",() => {
-    console.dir(textHolder);
-    if(!textHolder.value)
-    {
-        textHolder.classList.remove("invalid")
-    }
 })

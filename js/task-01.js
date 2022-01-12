@@ -1,4 +1,4 @@
-const listOfIt= categories.children
+const listOfIt = categories.children
 console.log("Number of categories:" ,listOfIt.length);
 const catrgoryItems=document.querySelectorAll('.item')
 for (const item of catrgoryItems) {

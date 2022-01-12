@@ -12,5 +12,5 @@ const negativ = () => {
     counterValue=counterValue-1
     document.querySelector("#value").textContent=counterValue
 };
-buttonPositive.addEventListener("click", posetiv);
-buttonNegative.addEventListener("click", negativ);
+buttonPositiveEl.addEventListener("click", posetiv);
+buttonNegativeEl.addEventListener("click", negativ);

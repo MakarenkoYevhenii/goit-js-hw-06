@@ -2,7 +2,8 @@ const textHolder = document.querySelector('#validation-input')
 
 textHolder.addEventListener("blur",()=>
 {
-    if(textHolder.value.length>=textHolder.dataset.length){
+    
+    if(textHolder.value.length===Number(textHolder.dataset.length)){   
         textHolder.classList.add("valid")
         textHolder.classList.remove("invalid")
     }
